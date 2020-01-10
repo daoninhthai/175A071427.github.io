@@ -54,11 +54,11 @@
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    	<i class="fa fa-user"></i>
-							<?php 
-								echo isset($_SESSION["account"]) ? $_SESSION["name"] : "";
-							?>
-                    	<b class="caret"></b>
+                        <i class="fa fa-user"></i>
+                            <?php 
+                                echo isset($_SESSION["account"]) ? $_SESSION["name"] : "";
+                            ?>
+                        <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
@@ -101,8 +101,8 @@
             <div class="container-fluid">
 
                 <?php 
-                	if(file_exists($controller))
-                		include $controller;
+                    if(file_exists($controller))
+                        include $controller;
                 ?>
 
             </div>

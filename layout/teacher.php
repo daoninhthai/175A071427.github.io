@@ -54,11 +54,11 @@
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    	<i class="fa fa-user"></i>
-							<?php 
-								echo isset($_SESSION["account"]) ? $_SESSION["name"] : "";
-							?>
-                    	<b class="caret"></b>
+                        <i class="fa fa-user"></i>
+                            <?php 
+                                echo isset($_SESSION["account"]) ? $_SESSION["name"] : "";
+                            ?>
+                        <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
@@ -66,7 +66,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="index.php?act=logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="index2.php?act=logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -75,21 +75,14 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Trang chủ </a>
+                        <a href="index2.php"><i class="fa fa-fw fa-dashboard"></i> Trang chủ </a>
                     </li>
                     <li>
-                        <a href="index.php?controller=users/list"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý users</a>
+                        <a href="index2.php?controller=student/list"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý sinh viên</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-book"></i> Quản lý bài viết <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="index.php?controller=blog/list">Danh sách bài viết</a>
-                            </li>
-                            <li>
-                                <a href="index.php?controller=catalog_blog/list">Chủ đề bài viết</a>
-                            </li>
-                        </ul>
+                        <a href="index2.php?controller=student/scores"><i class="fa fa-book"></i> Quản lý điểm </a>
+                        
                     </li>
                 </ul>
             </div>
@@ -101,8 +94,8 @@
             <div class="container-fluid">
 
                 <?php 
-                	if(file_exists($controller))
-                		include $controller;
+                    if(file_exists($controller))
+                        include $controller;
                 ?>
 
             </div>

@@ -2,17 +2,10 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Đăng nhập</title>
+  <title>Login</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/15d6788ae2.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="text/css" href="../public/images/infinity-logo.ico">
   <style>
-
-    .align {
+  	.align {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,8 +68,8 @@ html {
 }
 
 body {
-  background-color: aqua;
-  color: black;
+  background-color: #2c3338;
+  color: #606468;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
@@ -85,7 +78,6 @@ body {
   line-height: 1.5;
   margin: 0;
   min-height: 100vh;
-
 }
 
 /* modules/anchor.css */
@@ -113,7 +105,6 @@ input {
   padding: 0;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  border:1px solid black;
 }
 
 input[type='submit'] {
@@ -146,11 +137,9 @@ input[type='submit'] {
 }
 
 /* modules/login.css */
-.social-login{
 
-}
 .login {
-  color: #3C0707;
+  color: #eee;
 }
 
 .login label,
@@ -163,7 +152,7 @@ input[type='submit'] {
 }
 
 .login label {
-  background-color: #4F3C61;
+  background-color: #363b41;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   padding-left: 20px;
@@ -174,7 +163,7 @@ input[type='submit'] {
 
 .login input[type='password'],
 .login input[type='email'] {
-  background-color: #F4EFEF;
+  background-color: #3b4148;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -183,19 +172,19 @@ input[type='submit'] {
 .login input[type='password']:hover,
 .login input[type='email']:focus,
 .login input[type='email']:hover {
-  background-color: #F4EFEF;
+  background-color: #434a52;
 }
 
 .login input[type='submit'] {
-  background-color:#15107C;
-  color: #160202;
+  background-color: #ea4c88;
+  color: #eee;
   font-weight: 700;
   email-transform: uppercase;
 }
 
 .login input[type='submit']:focus,
 .login input[type='submit']:hover {
-  background-color: #F4EFEF;
+  background-color: #d44179;
 }
 
 /* modules/email.css */
@@ -214,8 +203,6 @@ p {
   </style>
 </head>
 <body class="align">
-
-  <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
     <div class="grid">
         <form action="" method="POST" class="form login">        
             <div class="form__field">
@@ -236,24 +223,10 @@ p {
             </div>            
             <div class="form__field">
                 <input type="submit" value="Sign In">
-            </div>
-            <form class="form-signin">
-            
-            <div class="social-login">
-               <button type="button" class="btn btn-fb"><i class="fab fa-facebook-f pr-1"></i> Facebook</button>
-                <button type="button" class="btn btn-gplus"><i class="fab fa-google-plus-g pr-1"></i> Google +</button>
-<!--Google +-->
-            <p style="text-align:center"> OR  </p>
-                 
-            <a href="#" id="forgot_pswd">Forgot password?</a>
-            <hr>
-            <!-- <p>Don't have an account!</p>  -->
-            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
-            </form>        
+            </div>        
         </form>    
-      <p class="email--center">Not a member? <a href="#">Sign up now</a></p>
-  </div>
+    	<p class="email--center">Not a member? <a href="#">Sign up now</a></p>
+	</div>
   <svg xmlns="http://www.w3.org/2000/svg" class="icons"><symbol id="arrow-right" viewBox="0 0 1792 1792"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H245q-52 0-84.5-37.5T128 1024V896q0-53 32.5-90.5T245 768h704L656 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"/></symbol><symbol id="lock" viewBox="0 0 1792 1792"><path d="M640 768h512V576q0-106-75-181t-181-75-181 75-75 181v192zm832 96v576q0 40-28 68t-68 28H416q-40 0-68-28t-28-68V864q0-40 28-68t68-28h32V576q0-184 132-316t316-132 316 132 132 316v192h32q40 0 68 28t28 68z"/></symbol><symbol id="user" viewBox="0 0 1792 1792"><path d="M1600 1405q0 120-73 189.5t-194 69.5H459q-121 0-194-69.5T192 1405q0-53 3.5-103.5t14-109T236 1084t43-97.5 62-81 85.5-53.5T538 832q9 0 42 21.5t74.5 48 108 48T896 971t133.5-21.5 108-48 74.5-48 42-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-320-893q0 159-112.5 271.5T896 896 624.5 783.5 512 512t112.5-271.5T896 128t271.5 112.5T1280 512z"/></symbol></svg>
-
 </body>
 </html>

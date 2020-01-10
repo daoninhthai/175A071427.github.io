@@ -11,11 +11,11 @@
 <table class="table table-bordered">
 	<tr>
 		<td width="50px;">STT</td>
-		<td width="130px">Avatar</td>
-		<td>Tiêu đề</td>
-		<td width="120px;">Mục</td>
-		<td width="120px">Ngày viết</td>
-		<td width="80px;"></td>
+		<td width="130px">Image</td>
+		<td>Name</td>
+		<td width="120px;">Catalog</td>
+		<td width="120px">Date created</td>
+		<td width="80px;">More</td>
 	</tr>
 	<?php 
 		$stt=0;
@@ -37,9 +37,9 @@
 		</td>
 		<td><?php echo $value["dateTime"] ?></td>
 		<td>
-			<a href="index.php?controller=blog/detail&id=<?php echo $value["token"] ?>">Xem</a><br>
-			<a href="index.php?controller=blog/edit&id=<?php echo $value["token"] ?>">Cập Nhật</a><br>
-			<a href="index.php?controller=blog/list&act=delete&id=<?php echo $value['token'] ?>">Xóa</a>
+			<a href="index.php?controller=blog/detail&id=<?php echo $value["token"] ?>">View</a>
+			<a href="index.php?controller=blog/edit&id=<?php echo $value["token"] ?>">Update</a>
+			<a href="index.php?controller=blog/list&act=delete&id=<?php echo $value['token'] ?>">Delete</a>
 		</td>
 	</tr>
 	<?php } ?>

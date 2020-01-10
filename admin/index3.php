@@ -12,7 +12,7 @@
 
 	if(isset($_SESSION['account'])) {
 		$controller = isset($_GET["controller"])?"controllers/".$_GET["controller"]."Controller.php":"controllers/home.php";
-		include "../layout/admin.php";
+		include "../layout/student.php";
 		
 	}
 	else {

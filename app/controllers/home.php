@@ -5,7 +5,7 @@
 			parent::__construct();
 
 			$number = $this->Model->count("select * from menu_list_blog");
-			$num_page = 10;
+			$num_page = 4;
 			$page_show = ceil($number/$num_page);
 			$page = isset($_GET["p"])&&$_GET["p"]>0?$_GET["p"]:1;
 			$form = ($page-1)*$num_page;

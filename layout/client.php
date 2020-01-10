@@ -1,309 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Rubel Miah">
+	
+	<!-- favicon icon -->
+	<link rel="shortcut icon" href="public/client/images/icon/favicon.png">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" type="text/css" href="public/images/infinity-logo.ico">
-  <title>Blog Home - Start Bootstrap Template</title>
 
-   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<title>Đại học thủy lợi</title>
+
+	<!-- common css -->
+	<link rel="stylesheet" href="public/client/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/client/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/client/css/magnific-popup.css">
+	<link rel="stylesheet" href="public/client/css/owl.carousel.css">
+	<link rel="stylesheet" href="public/client/css/owl.theme.css">
+	<link rel="stylesheet" href="public/client/css/slicknav.css">
+	<link rel="stylesheet" href="public/client/css/style.css">
+	<link rel="stylesheet" href="public/client/css/responsive.css">
+	
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
+	<!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="public/client/js/html5shiv.js"></script>
+    <script src="public/client/js/respond.js"></script>
+    <![endif]-->
+<style type="text/css">
 
-    width: 100%;
-    height: 100%;
-  }
-  </style>  
+	.map-container-2{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-2 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+#map-container-google-2{
+	margin-left: 50px;
+}
+.address{
+	margin-right: 50px;
+}
+.row{
+	margin:20px;
+}
+.scroll-up{
+	justify-content: flex-end;
+	display: flex;
+}
+.scroll-up img{
+	width:100px;
+}
+#carousel{
+	background-image: url(public/client/images/bg.jpg);
+}
+#logo{
+	width:190px;
+}
+.footer-social a{
+	color: black;
+}
+body{
+	background-color: #F9EFFA;
+}
+
+
+
+</style>
 </head>
 
-<body>
+<body class="home blog">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Đại học PHP</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Trang chủ
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Liên hệ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Giới thiệu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="admin/index.php?act=logout">Đăng nhập</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container">
-  
-  <div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="public/images/c6.jpg" >
-      <div class="carousel-caption">
-        <h2>Đại Học PHP</h2>
-        <p>We had such a great time in PHP!</p>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img src="public/images/c1.jpg" >
-      <div class="carousel-caption">
-        <h3>Education</h3>
-        <p>We all graduated!</p>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img src="public/images/c5.jpg" >
-      <div class="carousel-caption">
-        <h3>Dormitory</h3>
-        <p>Thank you, dormitory!</p>
-      </div>   
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-    <div class="row">
-
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">
-        <?<?php 
-            if(file_exists(controller))
-              include $controller;
-
-         ?>
-        <h1 class="my-4">Tin Tức
-        
-        </h1>
-
-        
-        <!-- Blog Post -->
-        <div>
-          <a>Secondary Text</a>
+	<!--preloader start-->
+    <div id="st-preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
         </div>
-        <div class="card mb-4">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    </div>
+	<!--/preloader end-->
+
+    <!--header start-->
+  
+    
+    <header id="header">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.php"><img id="logo" src="public/client/images/logo.png"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Trang chủ</a></li>
+      <li><a href="#">Liên hệ </a></li>
+      <li><a href="#">Chương trình đào tạo</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="admin/index.php?act=logout"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+    </ul>
+  </div>
+</nav> 
+<div class="container-fluid" id="carousel">
+<div id="myCarousel" class="container carousel slide " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/bread-food-brunch-lunch-3326103.jpg" class="d-block w-100" alt="...">
-      <div class="card-body">
-            <h2 class="card-title">Ninh Thai Dao</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
+    <div class="item active">
+      <img src="public/client/images/60nam.jpg" alt="Los Angeles">
     </div>
-    <div class="carousel-item">
-      <img src="images/woman-wearing-white-shirt-3325917.jpg" class="d-block w-100" alt="...">
-      <div class="card-body">
-            <h2 class="card-title">Thai Ninh Dao</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
+
+    <div class="item">
+      <img src="public/client/images/c1.jpg" alt="Chicago">
     </div>
-    <div class="carousel-item">
-      <img src="images/bread-food-brunch-lunch-3326103.jpg" class="d-block w-100" alt="...">
-    <div class="card-body">
-            <h2 class="card-title">Dao Ninh Thai</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
+
+    <div class="item">
+      <img src="public/client/images/c6.jpg" alt="New York">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control " href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-          
-          
-        </div>
-
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posted on January 1, 2017 by
-            <a href="#">Start Bootstrap</a>
-          </div>
-        </div>
-
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posted on January 1, 2017 by
-            <a href="#">Start Bootstrap</a>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <ul class="pagination justify-content-center mb-4">
-          <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-          </li>
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-          </li>
-        </ul>
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
+</div></div> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-menu-are">
+                        <div id="navigation-wrapper">
+                            <ul class="top-menu text-center">
+                               
+                                <h2>Bài viết</h2>
+                               
+                            </ul>                   
+                        </div>
+                    </div>
+                  
+                </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <!--Google map-->
-        <div id="map-container-google-2" class="z-depth-1-half map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476861.25369450223!2d105.37247990202877!3d20.973446114334816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135008e13800a29%3A0x2987e416210b90d!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2sus!4v1577205550887!5m2!1svi!2sus" frameborder="0"
-            style="border:2px solid aqua" allowfullscreen></iframe>
-        </div><br>
-      <!--Google Maps-->
         
-        <div>
-          <p><strong>TRƯỜNG ĐẠI HỌC THỦY LỢI</strong><br>
-          Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.<br>
-          Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351<br>
-          Email: <a href="#">phonghcth@tlu.edu.vn</a></p>
-        </div>
-          </div>
-        </div>
+    </header>
+    <!--/header end-->
+	
+	
 
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Thông báo</h5>
-          <div class="card-body">
-            <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h2>
-    </div>
+	<!--blog start-->
+	<div class="container">			
+        <?php
+            if(file_exists($controller))
+                include $controller;
+        ?>  
+	<!--/blog end-->
+   
+	</div>
+ <div class="container-fluid"><div class=" scroll-up ">
+					        <a href="#"><img src="public/client/images/back.png"></a>
+					    </div>   </div>   
+	<!--footer start-->
+	<footer id="footer">
+		<div class="container-fluid justify-content-center">
+		<div class="footer-social text-center navbar-default">
+			<a class="facebook" href="#" target="_blank"><i class="fa fa-facebook"></i> <span class="hidden-sm hidden-xs">Facebook</span></a>
+			<a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i> <span class="hidden-sm hidden-xs">Twitter</span></a>
+			<a class="google-plus" href="#" target="_blank"><i class="fa fa-google-plus"></i> <span class="hidden-sm hidden-xs">Google+</span></a>
+			<a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest-p"></i> <span class="hidden-sm hidden-xs">Pinterest</span></a>
+			<a class="instagram" href="#" target="_blank"><i class="fa fa-instagram"></i> <span class="hidden-sm hidden-xs">Instagram</span></a>
+			<a class="bloglovin" href="#" target="_blank"><i class="fa fa-heart"></i> <span class="hidden-sm hidden-xs">TLU</span></a>
+		</div><!-- /Footer Social -->
+</div><!-- /Copyright Text -->
+						
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+  <div class="row">
+    <div class="col-sm-4">
+     <div id="map-container-google-2" class="z-depth-1-half map-container ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.632019925324!2d105.82253501476292!3d21.007382786009977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8109765ba5%3A0xd84740ece05680ee!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBUaOG7p3kgTOG7o2k!5e0!3m2!1svi!2sus!4v1578631948368!5m2!1svi!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
+    <div class="col-md-8">
+	<div class="col-md-6">
+	<div class="row">
+	<hr class="hidden-md hidden-lg">
+	<div class="address">TRƯỜNG ĐẠI HỌC THỦY LỢI<br>
+	Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.<br>
+	Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351<br>
+	Email: <a href="#">phonghcth@tlu.edu.vn</a></div>
+	
+	<hr >
+	<div class="address">TRƯỜNG ĐẠI HỌC THỦY LỢI - CƠ SỞ 2<br>
+	Địa chỉ : Số 2 - Đường Trường Sa - P.17 - Q.Bình Thạnh - Tp.Hồ Chí Minh<br>
+	Điện thoại: (84)028.38&nbsp;400 532 - Fax: (84)028.38 400542<br>
+	Email: <a href="#">cs2@tlu.edu.vn</a></div>
+	</div>
+	</div>
+	
+	<div class="col-md-6">
+	<div class="row">	
+	<hr class="hidden-md hidden-lg">
+	<div class="address">TRƯỜNG ĐẠI HỌC THỦY LỢI - CƠ SỞ 2<br>
+	Phường An Thạnh - TX Thuận An - Tỉnh Bình Dương<br>
+	Điện thoại: (84).650.3748 620<br>
+	Fax:(84).650.3833 489</div>
+	
+	<hr>
+	<div class="address">VIỆN ĐÀO TẠO VÀ KHOA HỌC ỨNG DỤNG MIỀN TRUNG<br>
+	Địa chỉ: Số 115 Trần Phú, Thành phố&nbsp;Phan Rang, Tỉnh Ninh Thuận<br>
+	Điện thoại: 02593.823 027, 02593.823 028<br>
+	Email: <a href="#"> trungtamdh2@tlu.edu.vn</a></div>
+	</div>
+	</div>
 </div>
-          </div>
-        </div>
+			</div>
+		
+	</footer>
+	<!--/footer end-->
 
-      </div>
 
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+	<!-- js files -->
+	<script type="text/javascript" src="public/client/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="public/client/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="public/client/js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="public/client/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="public/client/js/masonry.min.js"></script>
+	<script type="text/javascript" src="public/client/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="public/client/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="public/client/js/jquery.slicknav.js"></script>
+	<script type="text/javascript" src="public/client/js/scripts.js"></script>
 </body>
-
 </html>

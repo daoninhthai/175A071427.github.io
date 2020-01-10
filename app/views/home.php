@@ -3,7 +3,8 @@
         <div class="row">
             <?php
                 foreach ($data as $value) {
-            ?>    
+            ?> 
+             
             <div class="col-md-6 grid2">   
                 <article class="hentry">
                     <div class="thumbnails">

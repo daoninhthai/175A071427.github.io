@@ -8,28 +8,26 @@
 
 <a href="index.php?controller=users/add" class="btn btn-primary" style="margin-bottom: 10px;">Thêm người dùng</a>
 
-<table class="table table-dark table-hover">
-	<thead class="thead-dark">
+<table class="table table-bordered table-hover">
 	<tr>
-		<td  width="50px;">STT</td>
-		<td width="500px;">Tên người dùng</td>
-		<td >Email</td>
-		<td width="100px;"></td>
+		<td width="50px;">STT</td>
+		<td width="200px;">Name</td>
+		<td>Email</td>
+		<td width="100px;">More</td>
 	</tr>
-	</thead>
+
 	<?php
 		$stt=0;
 		foreach ($data as $value) {
 			$stt++;
 	?>
-	
-	 <tr>
+	<tr>
 		<td style="text-align: center;"><?php echo $stt; ?></td>
 		<td><?php echo $value["name"]; ?></td>
 		<td><?php echo $value["email"] ?></td>
 		<td>
-			<a href="index.php?controller=users/edit&id=<?php echo $value["token"];?>">Cập nhật</a>
-			<a onclick="window.confirm('Bạn có muốn xóa???');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete">Xóa</a>
+			<a href="index.php?controller=users/edit&id=<?php echo $value["token"];?>">Update</a>
+			<a onclick="window.confirm('Bạn có muốn xóa???');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete">Delete</a>
 		</td>
 	</tr>
 	<?php } ?>
@@ -40,6 +38,3 @@
 		<li><a href="index.php?controller=users/list&p=<?php echo $i ?>"><?php echo $i; ?></a></li>
 	<?php } ?>
 </ul>
-
-
-
